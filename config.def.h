@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hack:style=Regular:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -109,7 +109,7 @@ static const char *colorname[] = {
 	"#c5c8c6",
 
 	/* 8 bright colors */
-	"#2a2a2a",
+	"#666666",
 	"#d54e53",
 	"#b9ca4a",
 	"#e7c547",
@@ -121,9 +121,6 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#c5c8c6",
-	"#1d1f21",
-	"#1d1f21",
 };
 
 
@@ -132,9 +129,9 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
